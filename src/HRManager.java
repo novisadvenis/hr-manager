@@ -1,12 +1,12 @@
-import view.View;
-
 import java.util.Scanner;
+
+import view.View;
 
 public class HRManager {
 
     private static final String LINE = "--------------------------------------";
 
-    private static final String[] NAVIGATION_OPTIONS = new String[]{"Exit", "Add Employee", "Edit Employee", "List Employees", "Delete Employee"};
+    private static final String[] NAVIGATION_OPTIONS = new String[]{"Exit", "Add Employee", "Edit Employee", "List Employees", "Delete Employee", "OrderBySalaray"};
 
     private static final Scanner scanner = new Scanner(System.in);
 
@@ -41,6 +41,7 @@ public class HRManager {
     private static void showMenu(int selectedMenuId) {
         switch (selectedMenuId) {
             case 1:
+            	System.out.println("See you next Time!!");
                 System.exit(0);
                 break;
             case 2:
@@ -54,6 +55,9 @@ public class HRManager {
                 break;
             case 5:
                 view.showDeleteEmployee();
+                break;
+            case 6:
+                view.showEmployeeOrderBySalary();
                 break;
             default:
                 System.out.println("You selected a invalid option. please select again.");

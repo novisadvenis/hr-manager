@@ -80,4 +80,17 @@ public class Employee {
     public String getId() {
         return id;
     }
+
+    @Override
+	public String toString() {
+		return  id + " | " + prename + " | " + surname + " | "
+				+ jobDescription + " | " + birthdate + " | " + salary + " | "
+				+ employmentDate + " \n";
+	}
+
+	
+	
+	
+    
+    
 }

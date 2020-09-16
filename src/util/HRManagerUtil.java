@@ -1,12 +1,13 @@
 package util;
 
 import java.security.SecureRandom;
+import java.text.SimpleDateFormat;
 import java.util.UUID;
 
 public class HRManagerUtil {
 
     public static SimpleDateFormat formatter = new SimpleDateFormat("dd.MM.yyyy");
-
+    
     //Thanks to Lunf (https://stackoverflow.com/questions/6584484/how-to-generate-a-unique-identifier-of-a-fixed-length-in-java)
     public static String generateId() {
         UUID idOne = UUID.randomUUID();
